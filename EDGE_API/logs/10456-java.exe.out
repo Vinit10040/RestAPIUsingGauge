@@ -1,0 +1,6 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"info","message":"Listening on port:62192"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"fatal","message":"Error in thread 10\nCan't resolve member named edgeTitle for class com.thoughtworks.gauge.maven.EDGE_title_01.Edge_login_verifytitle\norg.reflections.ReflectionsException: Can't resolve member named edgeTitle for class com.thoughtworks.gauge.maven.EDGE_title_01.Edge_login_verifytitle\r\n\tat org.reflections.util.Utils.getMemberFromDescriptor(Utils.java:94)\r\n\tat org.reflections.util.Utils.getMethodsFromDescriptors(Utils.java:101)\r\n\tat org.reflections.Reflections.getMethodsAnnotatedWith(Reflections.java:482)\r\n\tat com.thoughtworks.gauge.scan.StepsScanner.scan(StepsScanner.java:41)\r\n\tat com.thoughtworks.gauge.scan.ClasspathScanner.scan(ClasspathScanner.java:45)\r\n\tat com.thoughtworks.gauge.connection.MessageProcessorFactory.getProcessor(MessageProcessorFactory.java:71)\r\n\tat com.thoughtworks.gauge.RunnerServiceHandler.lambda$initializeSuiteDataStore$0(RunnerServiceHandler.java:51)\r\n\tat com.thoughtworks.gauge.execution.TaskExecutor.run(TaskExecutor.java:22)\r\n"}

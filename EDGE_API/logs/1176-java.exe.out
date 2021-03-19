@@ -1,0 +1,19 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"info","message":"Listening on port:62755"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+Request method:	GET
+Request URI:	http://innovate-stage-209385288.us-east-1.elb.amazonaws.com/api/v2/supply/getAllocatedSurveys
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-access-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDVjNTc4NDczNzAyMTUzNzIwYjU0YyIsInVzcl9pZCI6NTAyNSwidXNyX3R5cGUiOiJzdXBwbGllciIsImlhdCI6MTYxNjA4Nzg5OH0.0YDVDaCsk7_8oi7ENmK6PlkNx8NaeOiBC0o37TrXJmk"
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>

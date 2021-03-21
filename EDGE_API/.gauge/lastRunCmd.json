@@ -1,6 +1,6 @@
 [
 	"gauge",
 	"run",
-	"--dir=C:\\Users\\vinit\\eclipse-workspace\\EDGE_API",
-	"C:\\Users\\vinit\\eclipse-workspace\\EDGE_API\\specs"
+	"--dir=C:\\Users\\vinit\\git\\RestAPIUsingGauge\\EDGE_API",
+	"C:\\Users\\vinit\\git\\RestAPIUsingGauge\\EDGE_API\\specs"
 ]

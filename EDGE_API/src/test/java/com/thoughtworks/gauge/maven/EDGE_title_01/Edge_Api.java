@@ -6,8 +6,10 @@ import com.thoughtworks.gauge.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 
 import org.apache.http.HttpStatus;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,5 +63,31 @@ public class Edge_Api {
 
 		   
    }
-      
+   @Step("User call getAllocatedSurveysBySurveyId api")
+   public void getAllocatedSurveysById() {
+	   
+	   RestAssured.baseURI = configreader.getBaseURI();
+	   response = RestAssured.given().header("X-access-token",configreader.getStageToken())
+    		   .log().all().contentType(ContentType.JSON)
+               .get(Endpoints.GETALLOCATEDSURVEYSBYID).andReturn();
+  
+   }
+   @Step("API should have CPI field")   
+   public void getAllocatedCPIField()
+   {
+	   ResponseBody body=  response.getBody();
+	   String bodyStringValue = body.asString();
+	   Assert.assertTrue(bodyStringValue.contains("CPI"));
+	   Assert.assertTrue(bodyStringValue.contains("Country"));
+	   Assert.assertTrue(bodyStringValue.contains("LOI"));
+	   
+   }
+   @Step("Validate response time of getAllocatedSurveysBySurveyId api")
+   public void apiResponseTime()
+   {
+	   RestAssured.baseURI = configreader.getBaseURI();
+	   response = (Response) RestAssured.given().header("X-access-token",configreader.getStageToken())
+    		   .log().all().contentType(ContentType.JSON)
+               .get(Endpoints.GETALLOCATEDSURVEYSBYID).then().time(lessThan(1000L)); 
+   }
 }

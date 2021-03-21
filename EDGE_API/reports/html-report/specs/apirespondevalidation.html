@@ -142,10 +142,10 @@
   <div id="specificationContainer" class="details">
     <header class="curr-spec">
       <div class="spec-head-wrapper">
-        <h3 class="spec-head" title="C:\Users\vinit\git\RestAPIUsingGauge\EDGE_API\specs\edgeapi.spec">Feature - Allocated Surveys</h3>
+        <h3 class="spec-head" title="C:\Users\vinit\git\RestAPIUsingGauge\EDGE_API\specs\apirespondevalidation.spec">Feature - validate get Allocated Surveys response</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
-            <li class="fail"><span class="value">2</span><span class="txt">Failed</span></li>
+            <li class="fail"><span class="value">1</span><span class="txt">Failed</span></li>
             <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
@@ -154,12 +154,12 @@
       <div class="spec-meta">
         <div class="spec-filename">
           <label for="specFileName">File Path</label>
-          <input id="specFileName" value="C:\Users\vinit\git\RestAPIUsingGauge\EDGE_API\specs\edgeapi.spec" readonly/>
+          <input id="specFileName" value="C:\Users\vinit\git\RestAPIUsingGauge\EDGE_API\specs\apirespondevalidation.spec" readonly/>
           <button class="clipboard-btn" data-clipboard-target="#specFileName" title="Copy to Clipboard">
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:00:02</span>
+        <span class="time">00:00:05</span>
       </div>
 
 	
@@ -192,9 +192,9 @@
 
 	
   <div class="scenario-head">
-    <h3 class="head borderBottom">Verify Get allocated API endpoint</h3>
+    <h3 class="head borderBottom">Verify Get allocatedSurveysById API endpoint</h3>
     
-    <span class="time">00:00:02</span>
+    <span class="time">00:00:05</span>
 
 	
   
@@ -219,7 +219,7 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:05</span>
     </h5>
   
   <div class="step-info passed">
@@ -242,7 +242,70 @@
   
     
       <span>
-        User call getAllocatedSurveys api
+        User call getAllocatedSurveysBySurveyId api
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info passed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        API should have CPI field
       </span>
     
   
@@ -305,7 +368,7 @@
   
     
       <span>
-        user should get Ok response
+        Validate response time of getAllocatedSurveysBySurveyId api
       </span>
     
   
@@ -318,202 +381,15 @@
     <div class="exception-container">
       <div class="exception">
         <h4 class="error-message">
-          <pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;201&gt;</pre>
+          <pre>java.lang.ClassCastException: io.restassured.internal.ValidatableResponseImpl cannot be cast to io.restassured.response.Response</pre>
         </h4>
-        <pre class="stacktrace">org.junit.Assert.fail(Assert.java:88)<br/>org.junit.Assert.failNotEquals(Assert.java:834)<br/>org.junit.Assert.assertEquals(Assert.java:645)<br/>org.junit.Assert.assertEquals(Assert.java:631)<br/>com.thoughtworks.gauge.maven.EDGE_title_01.Edge_Api.userShouldGetOkResponse(Edge_Api.java:61)<br/></pre>
+        <pre class="stacktrace">com.thoughtworks.gauge.maven.EDGE_title_01.Edge_Api.apiResponseTime(Edge_Api.java:91)<br/></pre>
       </div>
       
          <div class="screenshot-container">
           <div class="screenshot">
-            <a href="../images/screenshot-08714a9c-91f7-4e1a-b7c0-9598baa1b849.png" rel="lightbox">
-              <img src="../images/screenshot-08714a9c-91f7-4e1a-b7c0-9598baa1b849.png" class="screenshot-thumbnail" />
-            </a>
-          </div>
-        </div>
-      
-    </div>
-  </div>
-
-    
-    
-  
-
-    
-    
-  
-
-  
-  
-  
-  
-
-  
-  
-
-  
-	</li></ul></div></div>
-  
-    
-  
-
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-	
-	</div>
-
-      
-        
-	
-  <div class="scenario-container failed">
-    
-
-	
-  <div class="scenario-head">
-    <h3 class="head borderBottom">Verify Get question categories API endpoint</h3>
-    
-    <span class="time">00:00:00</span>
-
-	
-  
-
-	</div>
-  
-  
-
-  
-  
-
-  
-	
-
-  
-  
-    
-  
-    
-  
-  <div class="step">
-  
-  
-    <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:00</span>
-    </h5>
-  
-  <div class="step-info passed">
-  
-  <ul>
-    <li class="step">
-      <div class="step-txt">
-
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-    
-      <span>
-        User call getSurveytargeting api
-      </span>
-    
-  
-  </div>
-
-  
-    
-    
-  
-
-    
-    
-  
-
-  
-  
-  
-  
-
-  
-  
-
-  
-	</li></ul></div></div>
-  
-    
-  
-
-  
-
-  
-    
-  
-    
-  
-  <div class="step">
-  
-  
-    <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:00</span>
-    </h5>
-  
-  <div class="step-info failed">
-  
-  <ul>
-    <li class="step">
-      <div class="step-txt">
-
-
-  
-  
-
-  
-  
-
-  
-  
-  
-  
-  
-    
-      <span>
-        user should get Ok response
-      </span>
-    
-  
-  </div>
-
-  
-    
-        
-  <div class="error-container failed">
-    <div class="exception-container">
-      <div class="exception">
-        <h4 class="error-message">
-          <pre>java.lang.AssertionError: expected:&lt;200&gt; but was:&lt;201&gt;</pre>
-        </h4>
-        <pre class="stacktrace">org.junit.Assert.fail(Assert.java:88)<br/>org.junit.Assert.failNotEquals(Assert.java:834)<br/>org.junit.Assert.assertEquals(Assert.java:645)<br/>org.junit.Assert.assertEquals(Assert.java:631)<br/>com.thoughtworks.gauge.maven.EDGE_title_01.Edge_Api.userShouldGetOkResponse(Edge_Api.java:61)<br/></pre>
-      </div>
-      
-         <div class="screenshot-container">
-          <div class="screenshot">
-            <a href="../images/screenshot-8892f0f9-ab9c-4956-aeb6-2bda022e081c.png" rel="lightbox">
-              <img src="../images/screenshot-8892f0f9-ab9c-4956-aeb6-2bda022e081c.png" class="screenshot-thumbnail" />
+            <a href="../images/screenshot-62df52b0-3962-442a-b40b-f0fd7c01822c.png" rel="lightbox">
+              <img src="../images/screenshot-62df52b0-3962-442a-b40b-f0fd7c01822c.png" class="screenshot-thumbnail" />
             </a>
           </div>
         </div>

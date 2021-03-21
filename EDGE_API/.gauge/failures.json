@@ -1,7 +1,11 @@
 {
 	"Args": [
 		"run",
-		"--dir=C:\\Users\\vinit\\eclipse-workspace\\EDGE_API"
+		"--dir=C:\\Users\\vinit\\git\\RestAPIUsingGauge\\EDGE_API"
 	],
-	"FailedItems": []
+	"FailedItems": [
+		"specs\\edgeapi.spec:4",
+		"specs\\edgeapi.spec:9",
+		"specs\\apirespondevalidation.spec:4"
+	]
 }

@@ -1,1 +1,1 @@
-var index = {"Tags":{},"Specs":{"Feature - Allocated Surveys":["specs/edgeapi.html"]}};
+var index = {"Tags":{},"Specs":{"Feature - Allocated Surveys":["specs/edgeapi.html"],"Feature - validate get Allocated Surveys response":["specs/apirespondevalidation.html"]}};
